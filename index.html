@@ -7,125 +7,121 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        body { 
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-        .tap-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .tap-card:hover { transform: scale(1.05); box-shadow: 0 0 25px -5px rgb(163 163 163); }
-        .neon { text-shadow: 0 0 15px #a3e635, 0 0 30px #a3e635; }
-        h1, h2, h3 { font-weight: 700; letter-spacing: -0.025em; }
-        img { max-width: 100%; border-radius: 16px; object-fit: cover; }
+        body { font-family: 'Courier New', monospace; background: #000; color: #fff; }
+        .tap-card { transition: all 0.3s; cursor: pointer; }
+        .tap-card:hover { transform: scale(1.05); }
+        .neon { text-shadow: 0 0 10px #00ff9d, 0 0 20px #00ff9d; }
     </style>
 </head>
-<body class="bg-black text-white min-h-screen">
-    <!-- HERO - NEW CUSTOM ICON -->
-    <div class="min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
-        <div class="text-center z-10 px-6">
-            <img src="Untitled design.png" alt="Franix" class="mx-auto w-40 h-40 rounded-3xl border-4 border-lime-400 shadow-2xl mb-6">
-            <h1 class="text-6xl md:text-8xl font-bold neon tracking-tighter">Franix</h1>
+<body class="min-h-screen">
+    <!-- HERO - exactly like original -->
+    <div class="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
+        <div class="text-center px-6">
+            <img src="Untitled design.png" alt="Franix" class="mx-auto w-32 h-32 rounded-full border-4 border-lime-400 mb-6">
+            <h1 class="text-6xl font-bold neon">Franix ♟︎</h1>
             <p class="text-3xl mt-2">@Franixweb3</p>
-            <p class="text-3xl mt-8">Web3 KOL & Creative Fiend</p>
-            <p class="text-xl mt-3 text-lime-400">KOL • Video Editor & Clipper • Community Manager • Graphic Designer • Web Dev • Thread Farmer • Merch Creator • Business Development</p>
-            <p class="mt-10 text-2xl">"The Missing Link Between Narrative, Chain & Community"</p>
-            <div class="mt-12 flex justify-center gap-8 text-4xl">
-                <a href="https://x.com/Franixweb3" target="_blank" class="hover:text-lime-400">𝕏</a>
-            </div>
+            <p class="text-2xl mt-8">Web3 KOL & Creative Fiend</p>
+            <p class="mt-12 text-3xl">"The Missing Link Between Narrative, Chain & Community"</p>
         </div>
     </div>
 
-    <!-- ABOUT -->
-    <div class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h2 class="text-4xl font-bold mb-8">About the Fiend</h2>
-        <p class="text-xl leading-relaxed">I'm a Web3 KOL and multi-skilled creative who builds **and** amplifies. I run community management, create viral threads & campaigns, edit full explainers and short-form clips, design merch drops, ship clean web tools, **and close Business Development deals**. From handling branding for web3 projects and founder clips to onboarding partners and driving ecosystem growth — I make projects actually get noticed, grow, and connect with the right people.</p>
+    <!-- ABOUT - same as original -->
+    <div class="max-w-2xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-4xl mb-6">About the Fiend</h2>
+        <p class="text-xl leading-relaxed">I'm a Web3 KOL and multi-skilled creative who builds **and** amplifies. Community management, viral threads & campaigns, video editing & short-form clipping that hit 5k–7k+ views, merch drops, web dev, and closing BD deals. I don't just ship — I make projects get noticed and grow.</p>
     </div>
 
-    <!-- SKILLS (tap cards) -->
-    <div class="max-w-4xl mx-auto px-6 py-20">
-        <h2 class="text-4xl font-bold text-center mb-12">Tap the Cards</h2>
+    <!-- SKILLS - tap cards exactly like original -->
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <h2 class="text-4xl text-center mb-12">Tap the Cards</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div onclick="this.classList.toggle('!bg-lime-400');this.classList.toggle('!text-black')" class="tap-card bg-zinc-900 p-8 rounded-3xl cursor-pointer border border-lime-400/30">
+            <div onclick="this.classList.toggle('bg-lime-400');this.classList.toggle('text-black')" class="tap-card bg-zinc-900 p-8 rounded-2xl border border-lime-400/30">
                 <h3 class="text-2xl font-bold">KOL & Content Amplification</h3>
-                <p class="mt-4">Viral threads, GTM campaigns & explainers that turn lurkers into believers (5k-7k+ views)</p>
+                <p class="mt-4">Viral threads, GM campaigns & explainers that turn lurkers into believers</p>
             </div>
-            <div onclick="this.classList.toggle('!bg-lime-400');this.classList.toggle('!text-black')" class="tap-card bg-zinc-900 p-8 rounded-3xl cursor-pointer border border-lime-400/30">
+            <div onclick="this.classList.toggle('bg-lime-400');this.classList.toggle('text-black')" class="tap-card bg-zinc-900 p-8 rounded-2xl border border-lime-400/30">
                 <h3 class="text-2xl font-bold">Video Production & Clipping</h3>
-                <p class="mt-4">Full explainers, founder interviews & short-form clips (RoboQuant, RareBetSports, etc.)</p>
+                <p class="mt-4">Full explainers + short-form clips (RoboQuant, RareBetSports, etc.)</p>
             </div>
-            <div onclick="this.classList.toggle('!bg-lime-400');this.classList.toggle('!text-black')" class="tap-card bg-zinc-900 p-8 rounded-3xl cursor-pointer border border-lime-400/30">
+            <div onclick="this.classList.toggle('bg-lime-400');this.classList.toggle('text-black')" class="tap-card bg-zinc-900 p-8 rounded-2xl border border-lime-400/30">
                 <h3 class="text-2xl font-bold">Community Management</h3>
                 <p class="mt-4">Daily engagement, bridging campaigns & points farming systems</p>
             </div>
-            <div onclick="this.classList.toggle('!bg-lime-400');this.classList.toggle('!text-black')" class="tap-card bg-zinc-900 p-8 rounded-3xl cursor-pointer border border-lime-400/30">
+            <div onclick="this.classList.toggle('bg-lime-400');this.classList.toggle('text-black')" class="tap-card bg-zinc-900 p-8 rounded-2xl border border-lime-400/30">
                 <h3 class="text-2xl font-bold">Business Development & Partnerships</h3>
-                <p class="mt-4">Deal sourcing, Fundraising, OTC Deals, partner onboarding & ecosystem growth</p>
+                <p class="mt-4">Deal sourcing, partner onboarding & ecosystem growth</p>
             </div>
-            <div onclick="this.classList.toggle('!bg-lime-400');this.classList.toggle('!text-black')" class="tap-card bg-zinc-900 p-8 rounded-3xl cursor-pointer border border-lime-400/30">
+            <div onclick="this.classList.toggle('bg-lime-400');this.classList.toggle('text-black')" class="tap-card bg-zinc-900 p-8 rounded-2xl border border-lime-400/30">
                 <h3 class="text-2xl font-bold">Graphic Design & Merch</h3>
-                <p class="mt-4">Full branding & Superteam-winning merch drops (hoodies, caps, totes, mugs)</p>
+                <p class="mt-4">Superteam-winning merch drops & branding</p>
             </div>
-            <div onclick="this.classList.toggle('!bg-lime-400');this.classList.toggle('!text-black')" class="tap-card bg-zinc-900 p-8 rounded-3xl cursor-pointer border border-lime-400/30">
+            <div onclick="this.classList.toggle('bg-lime-400');this.classList.toggle('text-black')" class="tap-card bg-zinc-900 p-8 rounded-2xl border border-lime-400/30">
                 <h3 class="text-2xl font-bold">Web Dev & Onchain Tools</h3>
-                <p class="mt-4">Clean dApps, landing pages & community tools</p>
+                <p class="mt-4">Clean landing pages & community tools</p>
             </div>
         </div>
     </div>
 
-    <!-- SERVICES -->
-    <div class="bg-zinc-950 py-20">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Services (I ship these)</h2>
-            <div class="space-y-8 text-xl">
-                <div class="flex gap-8 items-start"><span class="text-lime-400 font-mono">01</span> KOL Campaigns & Viral Growth Strategy</div>
-                <div class="flex gap-8 items-start"><span class="text-lime-400 font-mono">02</span> Video Production & Short-Form Clipping</div>
-                <div class="flex gap-8 items-start"><span class="text-lime-400 font-mono">03</span> Community Management & Engagement Systems</div>
-                <div class="flex gap-8 items-start"><span class="text-lime-400 font-mono">04</span> Business Development & Partnership Deals</div>
-                <div class="flex gap-8 items-start"><span class="text-lime-400 font-mono">05</span> Graphic Design & Branding</div>
-                <div class="flex gap-8 items-start"><span class="text-lime-400 font-mono">06</span> Web Dev for dApps & Landing Pages</div>
+    <!-- SERVICES - exactly like original -->
+    <div class="bg-zinc-950 py-16">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-4xl text-center mb-12">Services (I ship these)</h2>
+            <div class="space-y-6 text-xl">
+                <div class="flex gap-6"><span class="text-lime-400 font-mono">01</span> KOL Campaigns & Viral Thread Strategy</div>
+                <div class="flex gap-6"><span class="text-lime-400 font-mono">02</span> Video Production & Short-Form Clipping</div>
+                <div class="flex gap-6"><span class="text-lime-400 font-mono">03</span> Community Management & Engagement Systems</div>
+                <div class="flex gap-6"><span class="text-lime-400 font-mono">04</span> Business Development & Partnership Deals</div>
+                <div class="flex gap-6"><span class="text-lime-400 font-mono">05</span> Graphic Design & Merch Drops</div>
+                <div class="flex gap-6"><span class="text-lime-400 font-mono">06</span> Web Dev for dApps & Landing Pages</div>
             </div>
         </div>
     </div>
 
-    <!-- FEATURED KOL WORK - YOUR REAL IMAGES HERE -->
-    <div class="max-w-4xl mx-auto px-6 py-20">
-        <h2 class="text-4xl font-bold text-center mb-12">Proof as KOL & Creator</h2>
+    <!-- PROOF OF WORK - exactly like original (tweet-only for the ones you asked) -->
+    <div class="max-w-4xl mx-auto px-6 py-16">
+        <h2 class="text-4xl text-center mb-12">Proof of Work</h2>
         <div class="grid gap-8">
-            <div class="border border-lime-400/30 p-8 rounded-3xl">
-                <img src="IMG_0444.jpeg" alt="Superteam Merch">
-                <h3 class="text-2xl mt-4">Superteam Merch Bounty Winner</h3>
+            <!-- Superteam (keeps one image like original style) -->
+            <div class="border border-lime-400/30 p-8 rounded-2xl">
+                <img src="IMG_0444.jpeg" alt="Superteam Merch" class="rounded-xl mb-4">
+                <h3 class="text-2xl">Superteam Merch Bounty Winner</h3>
                 <p class="mt-2">Full merch line + hype thread for foster_protocol</p>
-                <a href="https://x.com/Franixweb3/status/1890576700863402005" target="_blank" class="text-lime-400 underline mt-4 block">View thread →</a>
+                <a href="https://x.com/Franixweb3/status/1890576700863402005" target="_blank" class="text-lime-400 underline block mt-4">View thread →</a>
             </div>
 
-            <div class="border border-lime-400/30 p-8 rounded-3xl">
-                <img src="IMG_0445.jpeg" alt="RoboQuant Clip">
-                <h3 class="text-2xl mt-4">RoboQuant Video Explainer & Clips</h3>
+            <!-- Roboquant - tweet only -->
+            <div class="border border-lime-400/30 p-8 rounded-2xl">
+                <h3 class="text-2xl">RoboQuant Video Explainer & Clips</h3>
                 <p class="mt-2">7k+ views • Full system breakdown + short clips</p>
+                <a href="https://x.com/franixweb3/status/2024952720554070047" target="_blank" class="text-lime-400 underline block mt-4">View tweet →</a>
             </div>
 
-            <div class="border border-lime-400/30 p-8 rounded-3xl">
-                <img src="IMG_0498.jpeg" alt="RareBetSports Clip">
-                <h3 class="text-2xl mt-4">RareBetSports x Monad Founder Clip</h3>
+            <!-- RareBetSports - tweet only -->
+            <div class="border border-lime-400/30 p-8 rounded-2xl">
+                <h3 class="text-2xl">RareBetSports x Monad Founder Clip</h3>
                 <p class="mt-2">6k+ views • Web3 sports narrative edit + short-form clip</p>
+                <a href="https://x.com/franixweb3/status/2023985228507664733" target="_blank" class="text-lime-400 underline block mt-4">View tweet →</a>
             </div>
 
-            <div class="border border-lime-400/30 p-8 rounded-3xl">
-                <img src="IMG_1347.jpeg" alt="Mitosis Campaign">
-                <h3 class="text-2xl mt-4">MitosisOrg Bridging & Community Campaign</h3>
-                <p class="mt-2">Daily GM threads + bridging narrative + community management that moved volume</p>
+            <!-- Memelord coin tweet (replace the link with your actual tweet URL) -->
+            <div class="border border-lime-400/30 p-8 rounded-2xl">
+                <h3 class="text-2xl">Memelord Coin Campaign</h3>
+                <p class="mt-2">Daily hype + community push for my Memelord coin</p>
+                <a href="PASTE-YOUR-MEMELORD-TWEET-LINK-HERE" target="_blank" class="text-lime-400 underline block mt-4">View tweet →</a>
             </div>
         </div>
     </div>
 
-    <!-- FUN BOTTOM -->
-    <div class="text-center py-20 bg-black border-t border-lime-400/30">
-        <p class="text-2xl mb-8">Mini games because why not 🔥</p>
-        <p class="text-lime-400">The vibe stays interactive & fun</p>
+    <!-- MINI GAMES - kept the original vibe -->
+    <div class="text-center py-20 border-t border-lime-400/30 bg-black">
+        <p class="text-3xl mb-6">Mini games because why not ♟</p>
+        <p class="text-lime-400">Tap around — the chaos stays</p>
     </div>
 
     <footer class="text-center py-12 text-sm text-zinc-500">
-        Built by Franixweb3 • Live on GitHub Pages
+        Built by Franixweb3 • Forked & customized from onchainfiend
     </footer>
 
-    <script>console.log("Franix portfolio live 🔥");</script>
+    <script>console.log("Franix portfolio live — exactly like the original 🔥");</script>
 </body>
 </html>
