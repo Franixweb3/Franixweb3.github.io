@@ -732,17 +732,10 @@ footer p { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing
 </div>
 
 <!-- CLICK ME -->
-<script>
-function foolYa() {
-  const btn = document.getElementById('clickMe');
-  const originalText = btn.textContent;
-  btn.textContent = 'fooled ya 😂';
-  setTimeout(() => {
-    btn.textContent = originalText;
-  }, 2500);
-}
-</script>
-
+<div style="display:flex; justify-content:center; align-items:center; padding: 1rem 0; position:relative; z-index:2;">
+  <span class="click-me" id="clickMe" onclick="foolYa()">click me</span>
+</div>
+  
 <!-- HERO -->
 <div class="hero">
   <div class="hero-glow"></div>
@@ -750,7 +743,7 @@ function foolYa() {
   <div class="hero-chess">♟</div>
   <div class="hero-inner">
     <p class="hero-tag">⟢ Web3 KOL ⟢ · Content Creator⟢ · Graphic Designer</p>
-    <h1 class="hero-h1">Fran<span class="i-wrap"><span class="i-letter" style="position:relative;color:transparent;">i</span><span class="ball"></span></span>x ♟︎</h1>
+    <h1 class="class="hero-h1">Fran<span class="i-wrap"><span class="i-letter" style="color:white;">i</span><span class="ball"></span></span>x ♟︎</h1>
     <p class="hero-sub">@franixweb3 · x.com/franixweb3</p>
     <p class="hero-desc">Web3 KOL and creative strategist who bridges community building, content creation, and strategic growth. I craft compelling narratives </strong> and help projects build meaningful momentum onchain.</p>
     <p class="hero-hook">I don’t chase hype — I turn attention into momentum.</p>
