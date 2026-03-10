@@ -732,9 +732,16 @@ footer p { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing
 </div>
 
 <!-- CLICK ME -->
-<div style="display:flex; justify-content:center; align-items:center; padding: 1rem 0; position:relative; z-index:2;">
-  <span class="click-me" id="clickMe" onclick="activeForGigs()">click me</span>
-</div>
+<script>
+function foolYa() {
+  const btn = document.getElementById('clickMe');
+  const originalText = btn.textContent;
+  btn.textContent = 'fooled ya 😂';
+  setTimeout(() => {
+    btn.textContent = originalText;
+  }, 2500);
+}
+</script>
 
 <!-- HERO -->
 <div class="hero">
@@ -762,11 +769,9 @@ footer p { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing
   <h2 class="s-title reveal">The Bridge Between<br><span>Community Attention & Onchain Growth</span></h2>
   <div class="about-wrap reveal">
     <div class="about-body">
-      <img src="preview.jpg" alt="Franix" style="width:200px;height:200px;border-radius:50%;border:6px solid #D4AF37;box-shadow:0 0 40px rgba(212,175,55,0.6);">
-</div>
-</div>
-      <p>I focus on creating vibrant communities, producing engaging short-form videos and threads that connect with audiences, designing distinctive media that strengthens brand identity, and facilitating strategic business partnerships that deliver sustainable growth.</p>
-      <p>My goal is to help projects <strong>not only launch but truly thrive by combining</strong> creativity, consistency and genuine connection.</p>
+      <img src="preview.jpg" alt="Franix" style="width: 200px; height: 200px; border-radius: 50%; border: 6px solid #D4AF37; box-shadow: 0 0 40px rgba(212,175,55,0.6); margin: 40px auto; display: block;">
+<p>I focus on creating <strong>vibrant communities, producing engaging clips and threads that connects with audiences, designing distinctive media that strengthens brand identity</strong> and facilitating strategic business partnerships that deliver sustainable growth.</p>
+      <p>My goal is to help projects not only launch but thrive by combining <strong>creativity, consistency and genuine connections</strong>in the web3 space.</p>
     </div>
     <div class="about-stats">
       <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Projects</div></div>
